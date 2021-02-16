@@ -1,14 +1,22 @@
 
 .card {
   overflow: hidden;
-  background: white;
+  border: none;
+  background: rgba(125, 55, 255, 0.8);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
   width: 200px;
   padding: 0;
   margin-right: 5px;
-
+  
+  a {
+    text-decoration: none;
+    color: rgba(235, 189, 39, 0.8);
+    text-shadow: 0 0 0.5px rgba(235, 189, 39, 0.8);
+  } 
+  
   h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
   }
@@ -17,8 +25,8 @@
     margin: 0;
   }
 
-  li {
-    font-size: 16px;
+  li, p {
+    font-size: 14px;
     opacity: .7;
   }
 

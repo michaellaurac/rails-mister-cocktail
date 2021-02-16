@@ -13,6 +13,30 @@
   </head>
 
   <body>
+    <div class="navbar">
+      <%= link_to "cocktails#index", class: "navbar-brand" do %>
+        <%= image_tag "logo.jpg", class: "avatar" %>
+      <% end %>
+
+      <div>
+        <h1>Do you fancy a cocktail?</h1>
+      </div>
+
+      <div></div>
+
+    </div>
     <%= yield %>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        Your drink was shaken with <i class="fas fa-heart"></i> by Batch#507
+      </div>
+    </div>
   </body>
 </html>

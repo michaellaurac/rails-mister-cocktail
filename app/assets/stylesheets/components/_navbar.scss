@@ -1,12 +1,16 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
+  background: rgba(89, 0, 255, 0.8);
+  
+  h1 {
+    font-family: "Nunito", "Helvetica", "sans-serif";
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgba(235, 189, 39, 0.8);
+    text-shadow: 0 0 0.5px rgba(235, 189, 39, 0.8);
+  } 
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
   width: 40px;
 }
