@@ -1,5 +1,14 @@
-<h1>New cocktail</h1>
-<%= simple_form_for @cocktail do |form| %>
-  <%= form.input :name %>
-  <%= form.button :submit, class: "btn btn-primary" %>
-<% end %>
+<div class="background d-flex align-items-center">
+  <div class="cards container d-flex justify-content-around">
+    <div class="card">
+      <%= image_tag "new_cocktail.jpg", size: "200x300" %>
+      <div class="card-infos">
+        <h2>New cocktail</h2>
+        <%= simple_form_for @cocktail do |form| %>
+          <%= form.input :name %>
+          <%= form.button :submit, class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

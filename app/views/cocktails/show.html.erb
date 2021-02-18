@@ -1,11 +1,16 @@
-<div class="card">
-  <%= image_tag "#{@cocktail.name.downcase.gsub(' ', '_')}.jpg", size: "200x300" %>
-  <div class="card-infos">
+<div class="background d-flex align-items-center">
+  <div class="zoom text-center d-flex justify-content-center">
     <h2><%= @cocktail.name %></h2>
-    <ul class='list-unstyled'>
-      <% @cocktail.ingredients.each do |ingredient| %>
-        <li><%= ingredient.name %></li>
-      <% end %>
-    </ul>
+    <div class="zoom-infos d-flex justify-content-around">
+      <%= image_tag "#{@cocktail.name.downcase.gsub(' ', '_')}.jpg", size: "200x300" %>
+      <div class="zoom-doses text-left">
+        <h3>Doses</h3>
+        <ul class='list-unstyled'>
+          <% @cocktail.doses.each do |dose| %>
+            <li><%= "#{dose.description} of #{dose.ingredient.name}" %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
